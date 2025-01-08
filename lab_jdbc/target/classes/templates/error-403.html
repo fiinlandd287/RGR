@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error 403 - Forbidden</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #ecf0f1;
+        }
+
+        h1 {
+            color: #ff4c4c;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(255, 76, 76, 0.6);
+        }
+
+        p {
+            color: #c4c4c4;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #ff4c4c;
+            color: #1a1a2e;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #cc3b3b;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .back-link {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ff4c4c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #cc3b3b;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            button {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Error 403</h1>
+<p>You don't have permission to access this page.</p>
+
+<div class="button-container">
+    <button onclick="window.location.href='/'">Return to Home</button>
+</div>
+
+</body>
+</html>
